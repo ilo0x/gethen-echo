@@ -1,0 +1,125 @@
+{
+  "_seedInfo": {
+    "type": "AI Context Seed",
+    "purpose": "This is an AI Context Seed file designed to preserve conversation context and project state. Future AI assistants should use this to resume the project exactly where it was left off, maintaining all decisions, progress, and planned tasks.",
+    "version": "1.0",
+    "created": "2025-03-02"
+  },
+  "projectName": "X Reply Bot",
+  "description": "Auto-reply to accounts that engage with a target account on X (formerly Twitter)",
+  "dateCreated": "2025-03-02",
+  "architecture": {
+    "type": "polling-based",
+    "deployment": "serverless",
+    "platform": "Cloudflare Workers",
+    "dataStorage": "Cloudflare KV",
+    "schedulingMechanism": "Cloudflare Cron Triggers"
+  },
+  "technicalStack": {
+    "language": "TypeScript",
+    "framework": "Cloudflare Workers",
+    "apiClients": ["twitter-api-v2"],
+    "devTools": ["wrangler"]
+  },
+  "projectStructure": {
+    "main": "src/index.ts",
+    "directories": [
+      "src/",
+      "src/api/",
+      "src/utils/",
+      "src/types/"
+    ],
+    "configFiles": [
+      "wrangler.toml",
+      "package.json",
+      "tsconfig.json"
+    ]
+  },
+  "implementationDecisions": {
+    "pollingFrequency": "10 minutes",
+    "dataRetention": "7 days for processed tweets",
+    "targetAccount": "configurable via environment",
+    "replyMessage": "configurable via environment"
+  },
+  "versionControl": {
+    "platform": "GitHub",
+    "workflow": "feature branch with PRs to main",
+    "cicd": "GitHub Actions for automated deployment"
+  },
+  "todo": [
+    {
+      "id": 1,
+      "task": "Set up basic project structure",
+      "description": "Create directories and base files",
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "task": "Implement X API client",
+      "description": "Create functionality to interact with X API",
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "task": "Create tweet processing logic",
+      "description": "Implement comment finding and reply functionality",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "task": "Set up KV storage",
+      "description": "Configure Cloudflare KV for state management",
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "task": "Implement scheduling",
+      "description": "Set up Cloudflare cron triggers",
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "task": "Add secret management",
+      "description": "Configure environment variables and secrets",
+      "status": "pending"
+    },
+    {
+      "id": 7,
+      "task": "Create simple GitHub repository",
+      "description": "Initialize Git and push to GitHub",
+      "status": "pending"
+    },
+    {
+      "id": 8, 
+      "task": "Basic GitHub Actions setup",
+      "description": "Create a simple deployment workflow",
+      "status": "pending"
+    },
+    {
+      "id": 9,
+      "task": "Create basic dashboard UI",
+      "description": "Implement simple configuration interface",
+      "status": "pending"
+    },
+    {
+      "id": 10,
+      "task": "Documentation",
+      "description": "Create README with setup instructions",
+      "status": "pending"
+    }
+  ],
+  "futurePossibilities": {
+    "features": [
+      "Custom reply templates based on comment content",
+      "Multiple target accounts",
+      "Analytics dashboard",
+      "Rate limiting protection",
+      "Sentiment analysis for tailored responses"
+    ],
+    "architectureEvolution": [
+      "Potentially migrate to webhook-based approach if higher volume",
+      "Add database for more advanced state management",
+      "Implement more sophisticated GUI"
+    ]
+  }
+}
