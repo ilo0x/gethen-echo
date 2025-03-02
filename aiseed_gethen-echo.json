@@ -2,11 +2,12 @@
   "_seedInfo": {
     "type": "AI Context Seed",
     "purpose": "This is an AI Context Seed file designed to preserve conversation context and project state. Future AI assistants should use this to resume the project exactly where it was left off, maintaining all decisions, progress, and planned tasks.",
-    "version": "1.0",
-    "created": "2025-03-02"
+    "version": "1.1",
+    "created": "2025-03-02",
+    "lastEdited": "2025-03-02"
   },
-  "projectName": "X Reply Bot",
-  "description": "Auto-reply to accounts that engage with a target account on X (formerly Twitter)",
+  "projectName": "Gethen Echo",
+  "description": "Auto-reply to accounts that engage with a target account on X (formerly Twitter). Named after Ursula K. Le Guin's planet Gethen from 'The Left Hand of Darkness'.",
   "dateCreated": "2025-03-02",
   "architecture": {
     "type": "polling-based",

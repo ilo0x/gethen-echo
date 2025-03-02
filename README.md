@@ -1,5 +1,5 @@
-# Reply Bot for X
-*I will need a cool name for it*
+# Gethen Echo
+*Reply bot for X*
 ## Purpose
 Auto-reply to accounts that engage with a target account
 ## Scope
