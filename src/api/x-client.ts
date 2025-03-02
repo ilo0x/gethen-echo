@@ -8,31 +8,16 @@ export class XClient {
 	private client: TwitterApi;
 	private targetUsername: string;
 
-	/**
-	 * Create a new XClient
-	 * 
-	 * @param apiKey API key for X (Twitter)
-	 * @param apiSecret API secret for X (Twitter)
-	 * @param accessToken Access token for X (Twitter)
-	 * @param accessTokenSecret Access token secret for X (Twitter)
-	 * @param targetUsername Username of the target account to monitor
-	 */
 	constructor(
-		apiKey: string,
-		apiSecret: string,
-		accessToken: string,
-		accessTokenSecret: string,
-		targetUsername: string
-	) {
-		this.client = new TwitterApi({
-			appKey: apiKey,
-			appSecret: apiSecret,
-			accessToken: accessToken,
-			accessSecret: accessTokenSecret,
-		});
-
-		this.targetUsername = targetUsername;
-	}
+        clientId: string,
+        clientSecret: string,
+        accessToken: string,  // This would be your OAuth 2.0 access token
+        targetUsername: string
+    ) {
+        // Initialize with OAuth 2.0
+        this.client = new TwitterApi(accessToken);
+        this.targetUsername = targetUsername;
+    }
 
 	/**
 	 * Get recent mentions of the target account

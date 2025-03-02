@@ -19,16 +19,16 @@
     "crons": ["0 * * * *"]
   },
   
-  /**
-   * KV Storage
-   * For tracking processed tweets
-   */
-  // "kv_namespaces": [
-  //   {
-  //     "binding": "PROCESSED_TWEETS",
-  //     "id": "your-kv-id-will-go-here"
-  //   }
-  // ],
+	/**
+	 * KV Namespace for storing processed tweets
+	 */
+   "kv_namespaces": [
+		{
+			"binding": "PROCESSED_TWEETS",
+			"id": "PROCESSED_TWEETS_ID",
+			"preview_id": "PROCESSED_TWEETS_PREVIEW_ID"
+		}
+	],
 
   /**
    * Environment Variables
@@ -39,7 +39,7 @@
     "REPLY_MESSAGE": "Thanks for engaging with our content!"
   }
 
-  /**
+  /**git
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
    */
