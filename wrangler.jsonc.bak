@@ -2,43 +2,14 @@
  * For more details on how to configure Wrangler, refer to:
  * https://developers.cloudflare.com/workers/wrangler/configuration/
  */
- {
+{
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "gethen-echo",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-02-24",
 	"observability": {
 		"enabled": true
-	},
-  
-  /**
-   * Scheduled Triggers
-   * Run the bot once per hour
-   */
-  "triggers": {
-    "crons": ["0 * * * *"]
-  },
-  
-  /**
-   * KV Storage
-   * For tracking processed tweets
-   */
-  // "kv_namespaces": [
-  //   {
-  //     "binding": "PROCESSED_TWEETS",
-  //     "id": "your-kv-id-will-go-here"
-  //   }
-  // ],
-
-  /**
-   * Environment Variables
-   * Default configuration values
-   */
-  "vars": {
-    "TARGET_ACCOUNT": "ArcadiaFi",
-    "REPLY_MESSAGE": "Thanks for engaging with our content!"
-  },
-
+	}
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -53,14 +24,13 @@
    */
 
   /**
+   * Environment Variables
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+   */
+  // "vars": { "MY_VARIABLE": "production_value" },
+  /**
    * Note: Use secrets to store sensitive data.
    * https://developers.cloudflare.com/workers/configuration/secrets/
-   * 
-   * Required secrets for this project:
-   * - X_API_KEY
-   * - X_API_SECRET
-   * - X_ACCESS_TOKEN
-   * - X_ACCESS_SECRET
    */
 
   /**
