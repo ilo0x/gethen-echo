@@ -174,3 +174,4 @@ dist
 # archived files
 
 wrangler.sjonc.bak
+.dev.vars
