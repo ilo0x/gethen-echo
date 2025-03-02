@@ -1,4 +1,5 @@
-### Reply Bot for X
+# Reply Bot for X
+*I will need a cool name for it*
 ## Purpose
 Auto-reply to accounts that engage with a target account
 ## Scope
