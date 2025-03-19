@@ -123,5 +123,32 @@
       "Add database for more advanced state management",
       "Implement more sophisticated GUI"
     ]
+  },
+  "learningMethodology": {
+    "questionTypes": [
+      "Conceptual Exploration",
+      "Practical Implementation Inquiry"
+    ],
+    "cognitiveApproaches": [
+      "Decomposition of Complex Concepts",
+      "Analogy-Based Explanation",
+      "Practical Code Demonstration"
+    ],
+    "keyTeachingStrategies": [
+      "Step-by-Step Breakdown",
+      "Real-World Metaphors",
+      "Multiple Usage Scenarios",
+      "Best Practice Highlighting"
+    ]
+  },
+  "codeExplanationWorkflow": {
+    "steps": [
+      "Identify Core Functionality",
+      "Explain Technical Purpose",
+      "Provide Code Context",
+      "Demonstrate Practical Usage",
+      "Highlight Potential Variations",
+      "Discuss Best Practices"
+    ]
   }
 }
